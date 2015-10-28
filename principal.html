@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/principal.css">
-<link rel="stylesheet" href="css/style.css">
- <title>Lmail</title>
- </head>
- <body>
- <header>
- <section class="sect">
- <nav class="nav">
-<h1>Lmail</h1>
-<img src="img/logo.jpg">
-</nav>
-</section>
-</header>
-<section class="border">
-   <nav class="divbut">
-                <button class="but">Redactar</button>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/principal.css">
+      <title>Lmail</title>
+</head>
+<body>
+        <section class="sect">
+        <h1>mailto</h1>
+        </section>
+          <section class="border">
+            <div>
+                <button href = "javascript:void(0)" class="but" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Redactar
+                </button>
+                </div>
+                <div id="light" class="white_content borde">
+                <p>Mensaje nuevo
+                <button href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="butc">X</button></p>
+                <input class="inputredactar" type="name"placeholder="Destinatario" pattern="[^ @]*@[^ @]*" >
+                <input class="inputredactar" type="name"placeholder="Asunto"> 
+                <input class="inputredmen" type="name"placeholder="Cuerpo">
+                <button href = "javascript:void(0)" onclick = "location.href='registro.html'" class="butred">Enviar</button>
+                </div>
+                <nav class="divbut">
                 </br>
-               <a href="" class="a asalcolor">Salida</a>
-               </br>
-               <a href="" class="a aenvcolor">Enviados</a>
-         </nav> 
-         <nav class="divaderecha">
-               <a href="" class="a diva">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primer proyecto&nbsp;&nbsp;9:03</a>
-         </nav> 
-         <nav class="divaderecha">
-               <a href="" class="a diva">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matricula&nbsp;&nbsp;9:01</a>
-         </nav>  
-         <nav class="divaderecha">
-               <a href="" class="a diva">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tercer proyecto&nbsp;&nbsp;8:03</a>
-         </nav>
-         <nav class=table>
-         	<table>
+                <a href="principal.html" class="a asalcolor">Salida</a>
+                </br>
+                <a href="cenviados.html" class="a aenvcolor">Enviados</a>
+                </nav> 
+             <nav class="divaderecha">
+                <a href="" class="a diva">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primer proyecto&nbsp;&nbsp;9:03</a>
+             </nav> 
+             <nav class="divaderecha">
+             <a href="mcorreo2.html" class="a diva">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matricula&nbsp;&nbsp;9:01</a>
+             </nav>  
+             <nav class="divaderecha">
+             <a href="mcorreo3.html" class="a diva">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tercer proyecto&nbsp;&nbsp;8:03</a>
+             </nav>
+             <nav class=table>
+         	 <table>
              <tr bgcolor="black" >
               <td>
                   <font color="#FFFFFF">
@@ -47,6 +52,7 @@
 	<td>Favor revisar la pagina google.com para ver el enunciado </td>
 </table>
 </nav>
-</section> 
+<div id="fade" class="black_overlay"></div>
+            </section> 
 </body>
 </html>
