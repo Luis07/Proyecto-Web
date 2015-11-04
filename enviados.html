@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/principal.css">
+<title>Lmail</title>
+<script type="text/javascript">
+function delet() {
+document.getElementsByClassName('divcorreo3')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo3')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar')[0].setAttribute("style","display:none;");
+}
+</script>
+<script type="text/javascript">
+function vericon(){
+document.getElementsByClassName('iconeditar')[0].setAttribute("style","display:block;");
+}
+</script>
+<script type="text/javascript">
+function ver(comando){
+if(comando==1){
+document.getElementsByClassName('vercorreo')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('vercorreo2')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo3')[0].setAttribute("style","display:none;")
+}
+}
+</script>
+<script type="text/javascript">
+function ver2(){
+document.getElementsByClassName('vercorreo2')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('vercorreo')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo3')[0].setAttribute("style","display:none;")
+}
+</script>
+</script>
+<script type="text/javascript">
+function ver3(){
+document.getElementsByClassName('vercorreo3')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('vercorreo2')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo')[0].setAttribute("style","display:none;")
+}
+</script>
+</head>
+<body>
+<section class="sect">
+<h1>mailto</h1>
+</section>
+<section>
+<div>
+<button href = "javascript:void(0)" class="but" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Redactar
+</button>
+</div>
+<div id="light" class="white_content borde">
+<p>Mensaje nuevo
+<button href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="butc">X</button></p>
+<input class="inputredactar" type="name"placeholder="Destinatario" pattern="[^ @]*@[^ @]*" >
+<input class="inputredactar" type="name"placeholder="Asunto"> 
+<input class="inputredmen" type="name"placeholder="Cuerpo">
+<button href = "javascript:void(0)" onclick = "location.href='nuevo.html'" class="butred">Enviar</button>
+</div> 
+<div class="divbut c">
+<a href="redactar.html" class="a asalcolor ">Salida</a>
+</div>  
+<br> 
+<div class="divbut divbut a c">
+<a href="enviados.html" class="a aenvcolor colorred">Enviados</a>   
+</div> 
+</section>
+<section >
+<div class="divcorreo">
+<button class="a diva" onclick="ver(1);vericon()">Inicio de lecciones 9:03</button>
+</div>
+<div class="divcorreo2">
+<button class="a diva" onclick="ver2(); vericon()">Primer proyecto 7:03</button>
+</div>
+<div class="divcorreo3">
+<button onclick="ver3(); vericon()" class="a diva">Vijae a China 8:03</button>
+</div>
+</section>
+<section>
+<div class="iconeditar div">
+<button onclick="delet()"><img class="iconeditar" src="img/bin.png"></button>
+</div>
+<div class="vercorreo"> 
+<input class="inputredactar" readonly="readonly" type="text"placeholder= pattern="[^ @]*@[^ @]*" value="Para: Leonel Alberto <soyleonel@gmail.es> <BR>Envía: Luis Brenes G<soyluis@gmail.es>">
+<input class="inputredactar" readonly="readonly" type="text"placeholder="Asunto" value="Inicio de lecciones"> 
+<input class="inputredmen" readonly="readonly" type="text"placeholder="Cuerpo" value="Mae cuando entramos xD">
+</div>
+</section> 
+<section>
+<div class="iconeditar div">
+<button onclick="delet()"><img class="iconeditar" src="img/bin.png"></button>
+</div>
+<div class="vercorreo2"> 
+<input class="inputredactar" readonly="readonly" type="text"placeholder= pattern="[^ @]*@[^ @]*" value="Para: Carlos Alberto <soyvarlos@gmail.es> <BR>Envía: Luis Brenes G <soyluis@gmail.es>">
+<input class="inputredactar" readonly="readonly" type="text"placeholder="Asunto" value="Primer Proyecto"> 
+<input class="inputredmen" readonly="readonly" type="text"placeholder="Cuerpo" value="Buenas aquí se encuentra adjunto el primer proyecto">
+</div>
+</section>
+<section>
+<div class="iconeditar div">
+<button onclick="delet()"><img class="iconeditar" src="img/bin.png"></button>
+</div>    
+<div class="vercorreo3"> 
+<input class="inputredactar" readonly="readonly" type="text"placeholder= pattern="[^ @]*@[^ @]*" value="Para: Manuel Alberto <soymanuel@gmail.es> <BR>Envía: Luis Brenes G <soyluis@gmail.es>">
+<input class="inputredactar" readonly="readonly" type="text"placeholder="Asunto" value="Viaje a China"> 
+<input class="inputredmen" readonly="readonly" type="text"placeholder="Cuerpo" value="Don Manuel, favor de pasar a retirar sus boletos a nuestra agencia de viajes">
+</div>
+</section> 
+<div id="fade" class="black_overlay"></div>   
+</body>
+</html>
