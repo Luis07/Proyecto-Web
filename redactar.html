@@ -1,53 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/principal.css">
-      <title>Lmail</title>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/principal.css">
+<script type="text/javascript">
+function delet()
+ {
+document.getElementsByClassName('divcorreo3')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo3')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv1')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv3')[0].setAttribute("style","display:none;");
+  }
+</script>
+<script type="text/javascript">
+function ver(comando)
+{
+if(comando==1)
+{
+document.getElementsByClassName('vercorreo')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('vercorreo2')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo3')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar div')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('iconeditar div2')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('iconeditar eddiv')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv2')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv1')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv3')[0].setAttribute("style","display:none;")
+}
+}
+</script>
+<script type="text/javascript">
+function ver2()
+{
+document.getElementsByClassName('vercorreo2')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('vercorreo')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo3')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar div')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar div2')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('iconeditar eddiv2')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('iconeditar eddiv1')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv3')[0].setAttribute("style","display:none;")
+}
+</script>
+<script type="text/javascript">
+function ver3()
+{
+document.getElementsByClassName('vercorreo2')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('vercorreo3')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('iconeditar div')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar div2')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv2')[0].setAttribute("style","display:none;");
+document.getElementsByClassName('iconeditar eddiv1')[0].setAttribute("style","display:block;");
+document.getElementsByClassName('iconeditar eddiv3')[0].setAttribute("style","display:block;")
+}
+</script>
+<title>Lmail</title>
 </head>
 <body>
-        <section class="sect">
-        <h1>mailto</h1>
-        </section>
-<section>
-    <div>
-      <button href = "javascript:void(0)" class="but" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Redactar
-                </button>
-    </div>
-    <div id="light" class="white_content borde">
-         <p>Mensaje nuevo
-         <button href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="butc">X</button></p>
-         <input class="inputredactar" type="name"placeholder="Destinatario" pattern="[^ @]*@[^ @]*" >
-         <input class="inputredactar" type="name"placeholder="Asunto"> 
-         <input class="inputredmen" type="name"placeholder="Cuerpo">
-         <button href = "javascript:void(0)" onclick = "location.href='registro.html'" class="butred">Enviar</button>
-  </div>
-  <div class="divbut">
-          <a href="redactar.html" class="a asalcolor colorred">Salida</a>
-         </br>
-         <a href="enviados.html" class="a aenvcolor">Enviados</a>   
-  </div>  
-</section>
-<section >
-    <div class="divcorreo">
-      <a href="redactar.html" class="a diva" onclick="div.vercorreo.display">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primer proyecto&nbsp;&nbsp;9:03</a>
-    </div>
-    <div class="divcorreo2">
-      <a href="mcorreo2.html" class="a diva">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primer proyecto&nbsp;&nbsp;7:03</a>
-    </div>
-    <div class="divcorreo3">
-      <a href="mcorreo3.html" class="a diva">Borrador &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primer proyecto&nbsp;&nbsp;8:03</a>
-    </div>
+<section class="sect">
+<h1>mailto</h1>
 </section>
 <section>
-    <div class="vercorreo"> 
-         <input class="inputredactar" type="name"placeholder= pattern="[^ @]*@[^ @]*" value="Envía: Marc Anthony&nbsp; <soymarc@gmail.es>">
-         <input class="inputredactar" type="name"placeholder="Asunto" value="Canta con migo !plisss¡"> 
-         <input class="inputredmen" type="name"placeholder="Cuerpo" value="Querido señor la Roca, le gustaría cantar con migo??? PD: Soy tu Marc">
-    </div>
+<div>
+<button href = "javascript:void(0)" class="but" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+Redactar
+</button>
+</div>
+<div id="light" class="white_content borde">
+<p>Mensaje nuevo
+<button href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="butc">X</button></p>
+<input class="inputredactar" type="name"placeholder="Destinatario" pattern="[^ @]*@[^ @]*" >
+<input class="inputredactar" type="name"placeholder="Asunto"> 
+<input class="inputredmen" type="name"placeholder="Cuerpo">
+<button href = "javascript:void(0)" onclick = "location.href='nuevo.html'" class="butred">Enviar</button>
+</div>
+<div class="divbut c">
+<a href="redactar.html" class="a asalcolor colorred">Salida</a>
+</div>  
+<br> 
+<div class="divbut divbut a c">
+<a href="enviados.html" class="a aenvcolor">Enviados</a>   
+</div>  
+</section>
+<section>
+<div class="divcorreo">
+<button class="a diva" onclick="ver(1)" >
+Marc Anthony</br>
+Primer proyecto 9:03
+</button>
+</div>
+<div class="divcorreo2">
+<button class="a diva" onclick="ver2()"> 
+Carmelo Anthony</br>
+Primer proyecto 9:03</button>
+</div>
+<div class="divcorreo3">
+<button class="a diva" onclick="ver3()"> 
+Will Smith
+</br> Primer proyecto 9:03</button>
+</div>
+</section>
+<section>
+<div class="iconeditar div">
+<button onclick="location.href='edit2.html'"><img class="iconeditar" src="img/pen.png"></button>
+</div>
+<div class="iconeditar div2">
+<button onclick="delet()"><img class="iconeditar" src="img/bin.png"></button>
+</div>
+<div class="vercorreo"> 
+<input class="inputredactar" readonly="readonly" type="name"placeholder= pattern="[^ @]*@[^ @]*" value="Envía: Marc Anthony&nbsp; <soymarc@gmail.es>">
+<input class="inputredactar" readonly="readonly" type="name"placeholder="Asunto" value="Canta con migo !plisss¡"> 
+<input class="inputredmen" readonly="readonly" type="name"placeholder="Cuerpo" value="Querido señor la Roca, le gustaría cantar con migo??? PD: Soy tu Marc">
+</div>
+</section>
+<section>
+<div class="iconeditar eddiv">
+<button onclick="location.href='edit3.html'"><img class="iconeditar" src="img/pen.png"></button>
+</div>
+<div class="iconeditar eddiv2">
+<button onclick="delet()"><img class="iconeditar" src="img/bin.png"></button>
+</div> 
+<div class="vercorreo2"> 
+<input class="inputredactar" readonly="readonly" type="name"placeholder= pattern="[^ @]*@[^ @]*" value="Envía: Carmelo Anthony&nbsp; <soycarmelito@gmail.es>">
+<input class="inputredactar" readonly="readonly"type="name"placeholder="Asunto" value="Juega con migo !plisss¡"> 
+<input class="inputredmen" readonly="readonly" type="name"placeholder="Cuerpo" value="Querido señor pescadito Ruíz, le gustaría jugar con migo en los New York Yankes??? PD: Soy tu Carmelo">
+</div>
 </section> 
- <div id="fade" class="black_overlay"></div>   
+<section>
+<div class="iconeditar eddiv1">
+<button onclick="location.href='edit4.html'"><img class="iconeditar" src="img/pen.png" ></button>
+</div>
+<div class="iconeditar eddiv3">
+<button onclick="delet()"><img class="iconeditar" src="img/bin.png"></button>
+</div>
+<div class="vercorreo3"> 
+<input class="inputredactar" readonly="readonly" type="name"placeholder= pattern="[^ @]*@[^ @]*" value="Envía:Will Smith&nbsp; <soywill@gmail.es>">
+<input class="inputredactar" readonly="readonly" type="name"placeholder="Asunto" value="Has una pelii con migo !plisss¡"> 
+<input class="inputredmen" readonly="readonly" type="name"placeholder="Cuerpo" value="Querido señor Chunche Montero, le gustaría hacer una peli con migo en New York mañana??? PD: Soy tu Will">
+</div>
+</section> 
+<div id="fade" class="black_overlay"></div>   
 </body>
 </html>
