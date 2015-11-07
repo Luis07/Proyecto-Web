@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<section class="login container img-circle col-md-4  col-md-offset-4">
+		
+		<form class="form_login form-inline col-md-4 col-md-offset-2" name="form_login"  method="POST" >
+			<section class=" form-group">
+				<span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-user"></span></span>
+				<input class="btn_input_login form-control  " type="text" id="usuario" placeholder="Usuario" aria-describedby="basic-addon1"/ style="padding-right:31px">
+			</section>
+			<br>
+			<section class=" form-group">
+				<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+				<input class="btn_input_login form-control" type="password" id="contrasena" placeholder="Contraseña"/style="padding-right:31px">
+			</section>
+			<br>
+			<button class="btn_login btn btn-primary  col-md-offset-2" onclick="LOGIN.Login();">Login</button>
+			<a href="registro.html" class="a_login">Registrarse <span class="sr-only">(current)</span></a>
+		</form>
+
+	</section>
+
+	<script type="text/javascript"  src="index.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
