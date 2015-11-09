@@ -53,10 +53,10 @@ var LOGIN=LOGIN||
 
 	for (var i = 0; i <dato.length; i++) {
 		/*validacion de los usuarios*/
-
-		if(dato[i].User==this.usuario&&dato[i].Password==this.contrasena){
-			window.open('http://localhost/Luis/correo.html','','_self').value;
-			/**alert(dato[i].User + dato[i].Password);**/
+		if(dato[i].User==this.usuario&&dato[i].Password==this.contrasena)
+		{
+			window.open("correo.html");
+			/*alert(dato[i].User + dato[i].Password);*/
 		}
 	}
 },Login:function()
