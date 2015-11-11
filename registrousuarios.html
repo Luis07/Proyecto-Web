@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-responsive.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<section class="container ">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-7 borde col-md-offset-2 "> 
+
+					<form  name="form_registro" method="POST">
+						<p >Nombre: </p>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="sizing-addon1">  <span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+							<input type="text" class="form-control" placeholder="First-name" aria-describedby="sizing-addon1" name="Nombre">
+						</div>
+						<p class="txt-izq">Apellido: </p>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="sizing-addon1">  <span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+							<input type="text" class="form-control" placeholder="Last-name" aria-describedby="sizing-addon1" name="Apellido">
+						</div>
+						<p class="txt-izq">Fecha de nacimiento: </p>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="sizing-addon1">  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+							<input type="month" class="form-control" placeholder="BirthDay" aria-describedby="sizing-addon1" name="Fecha de nacimiento">
+						</div>
+						<p class="txt-izq">Correo: </p>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="sizing-addon1">@</span>
+							<input type="text" class="form-control" placeholder="E-mail" aria-describedby="sizing-addon1"id="usuarioregistro"pattern="[^ @]*@[^ @]*" name="Correo">
+						</div>
+						<p class="txt-izq">Contraseña: </p>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="sizing-addon1">  <span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+							<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"id="contrasenaregistro" name="Contraseña">
+						</div>
+						<p class="txt-izq">Sexo: </p>
+						<div class="dropdown">
+							<select class="dropdown tamanocmb">
+								<option value="Hombre">Hombre</option>
+								<option value="Mujer">Mujer</option>
+								<option value="Mujer">Otro</option>
+							</select>
+						</div>
+						<div class="btn-group" role="group" aria-label="...">
+							<button type="button" class="btn_registro btn btn-primary" onclick="LOGIN.guardarUser();">Aceptar</button>
+						</div><button type="button" class="btn_registro_cancel btn btn-primary">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<script type="text/javascript"  src="index.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
