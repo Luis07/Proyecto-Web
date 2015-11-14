@@ -12,13 +12,14 @@
 	<section class="container ">
 		<div class="col-md-12">
 			<div class="row">
-				<div class="col-md-7 borde col-md-offset-2 "> 
-
-					<form  name="form_registro" method="POST">
+				<div class="col-md-8 borde col-md-offset-2 "> 
+	<form  name="form_registro" method="POST">
+						<h1 class="h1registro">Registro</h1>
+						<hr>
 						<p >Nombre: </p>
 						<div class="input-group input-group-lg">
 							<span class="input-group-addon" id="sizing-addon1">  <span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
-							<input type="text" class="form-control" placeholder="First-name" aria-describedby="sizing-addon1" name="Nombre">
+							<input type="text" class="form-control" placeholder="First-name" aria-describedby="sizing-addon1" name="Nombre" >
 						</div>
 						<p class="txt-izq">Apellido: </p>
 						<div class="input-group input-group-lg">
@@ -47,17 +48,25 @@
 								<option value="Mujer">Mujer</option>
 								<option value="Mujer">Otro</option>
 							</select>
-						</div>
-						<div class="btn-group" role="group" aria-label="...">
-							<button type="button" class="btn_registro btn btn-primary" onclick="LOGIN.guardarUser();">Aceptar</button>
-						</div><button type="button" class="btn_registro_cancel btn btn-primary">Cancelar</button>
-						</div>
+						</div >
+						<input type="checkbox" id="checkterm" name="terminos" value="Terminos"/> 
+						Acepto las Condiciones del Servicio<br> 
+						y la Politica de Privacidad de Mailtto
+					</p>
+					<div class="div_tamano">
+						<button class="btn_registro btn btn-primary" target="_blank" onClick="LOGIN.guardarUser();" >Acceder </button> 
 					</div>
-				</div>
-			</div>
-		</section>
-	<script type="text/javascript"  src="index.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
-</html>
+					<div class="div_tamanobtn_cancel">
+						<button class="btn_registro btn btn-primary" type="button" onClick="location.href='index2.html'" >Cancelar </button></div>
+					</div>
+				</section>
+				<script type="text/javascript"  src="index.js"></script>
+				<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+			<div class="panel panel-default">
+  <div class="panel-body">
+    <button>Panel content</button>
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div></body>
+			</html>
