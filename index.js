@@ -121,20 +121,38 @@ var LOGIN=LOGIN||
       } 
       alert("Comprueba la extensión de los archivos a subir. \nSólo se pueden subir archivos con extensiones: " + extensiones_permitidas.join()); 
       return false; 
-  },
+  }
+,
+  cargarcorreosborrador:function() {
 
-  listacorreos:function() {
+  // read users from localstorage
+  // loop users
+  var user_html = "";
+  for (var i = 0; i < users.length; i++) {
+    // add users to the table
+    var u = users[i];
+    user_html = user_html + "<tr><td>"+      u.username+"</td><td>"+
+    u.password+"</td></tr>";
+  }
 
+  $('#users_table').html(user_html);
+
+}
+ ,
+
+  cargarcorreosborrador:function() {
+debugger;
 	// read users from localstorage
 	// loop users
+  users=JSON.parse(localStorage.getItem("Bandejasalida"));
 	var user_html = "";
 	for (var i = 0; i < users.length; i++) {
 		// add users to the table
 		var u = users[i];
-		user_html = user_html + "<tr><td>"+u.username+"</td><td>"+
-		u.password+"</td></tr>";
+		user_html = user_html + "<tr><td>"+"<div class=divmarcado>"+"<p>"+"<h4>"+u.para+"</h4>"+"<h4>"+u.asunto+"</h4>"+"<p>"+u.contenido+"</p>"
+    +"</p>"+"</div>"+"<div class=divbtn><button type=button class='btn btn-default' aria-label=Left Align><span class="+"'glyphicon glyphicon-trash'"+" aria-hidden=true></span></button></div>"+
+    "<div class='divbtn edit'><button type=button class='btn btn-default' aria-label=Left Align><span class="+"'glyphicon glyphicon-trash'"+" aria-hidden=true></span></button></div>"+"</td>+</tr>";
 	}
-
 	$('#users_table').html(user_html);
 
 },	usuarioconectado:function(){   
@@ -235,5 +253,29 @@ if(band===null){
   			}
   		}
   	}
+ ,guardarbandejaenviados:function()
+  {
+    debugger;
+    var para=document.getElementById("mensajepara").value;
+    var asunto=document.getElementById("asuntomensaje").value;
+    var contenido=document.getElementsByClassName("contenidomensaje").value;
+    if(LOGIN.validarEmail(para)){
+      var datosformulario=document.formredactar;
+      if(!LOGIN.camposvacios(datosformulario))
+      {
+        debugger;
+        var bandeja=new Array();
+        var band=JSON.parse(localStorage.getItem("Bandejaenviados"));
+        var nuevo={'User':usuacon,'para':para,'asunto':asunto,'contenido':contenido};
+if(band===null){
+  bandeja.push(nuevo);
+  localStorage.setItem("Bandejaenviados",JSON.stringify(bandeja));
+}else{
+  band.push(nuevo);  
+  localStorage.setItem("Bandejaenviados",JSON.stringify(band));
+}
+        }
+      }
+    }
 
 };
