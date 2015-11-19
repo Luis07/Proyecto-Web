@@ -1,69 +1,244 @@
-.login
-{
-	
-	background-image: url(http://www.fondos12.com/data/media/2/big/circulos__wallpaper_480x300.jpg);
-	margin-top: 13%;
-	padding-left: 0%;
-	height: 260px;
-	width: 27%;
+/***<div class="media borde div_tamanof">
+  <div class="media-left media-middle">
+	<a href="#">
+	  <img id="foto" class="media-object" src="" alt="">
+	</a>
+  </div>
+  <div class="media-body">
+	<h4 class="media-heading">Middle aligned media</h4>
+	...
+  </div>
+</div>
+						<div>
+						<input type="file" class="form-control" placeholder="First-name" aria-describedby="sizing-addon1" id="imagen" onchange="LOGIN.imagen()">
+						</div>***/
+						
 
-	
-}
+						.h1registro
+						{
+							width: 20%;
+							margin-top: -11%;
+							margin-left: 39%;
+						}
 
-.btn_input_login::-webkit-input-placeholder {
+						.login
+						{
+							
+							background-image: url(http://www.fondos12.com/data/media/2/big/circulos__wallpaper_480x300.jpg);
+							margin-top: 13%;
+							padding-left: 0%;
+							height: 260px;
+							width: 27%;
 
-	width: 12%;
-	color: blue;
+							
+						}
 
-} 
+						.btn_input_login::-webkit-input-placeholder {
 
-body
-{
-	background-image: url(http://p1.pichost.me/i/28/1511457.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-}
+							width: 12%;
+							color: blue;
 
-.form_login
-{
-	margin-top: 8%;
-}
+						} 
 
-.btn_login
-{
-	width: 245%;
-	margin-top: 26px;
-	margin-left: 1;
-}
-.btn_registro
-{   
-	width: 200%;
-	height: 37px;
-	margin-left: 381px;
-	margin-top: 25px;
-	}.btn_registro_cancel
-	{
-		width: 23%;
-		height: 37px;
-		margin-left: 302px;
-		margin-top: 31px;
-	}
-	.a_login
-	{
-		margin-left: 70px;
-		}.borde 
-		{
-			margin-top: 6%;
-			margin-left: 22%;
-			background-color: darkcyan;
-			border: solid white;
-			color: yellowgreen;
-			}.tamanocmb
-			{
-				width: 70%;
-				height: 37px;
-				border:inset;
-			}
+						body
+						{
+							background-image: url(http://p1.pichost.me/i/28/1511457.jpg);
+							background-repeat: no-repeat;
+							background-size: cover;
+							-moz-background-size: cover;
+							-webkit-background-size: cover;
+							-o-background-size: cover;
+						}
+
+						.form_login
+						{
+							margin-top: 8%;
+						}
+
+						.btn_login
+						{
+							width: 200%;
+							margin-top: 20px;
+						}
+						.btn_registro
+						{   
+							width: 97%;
+							height: 42px;
+							margin-left: 2%;
+							margin-top: 2%;
+						}
+						.btn_registro_cancel
+						{
+							width: 97%;
+							height: 42px;
+							margin-left: 2%;
+						}
+						.a_login
+						{
+							margin-left: 70px;
+						}
+						.b{
+							border: solid white;
+							margin-left: 94%;
+							width: 16%;
+							height: 77px;
+							padding-left: 0%;
+						}
+						.borde 
+						{
+							width: 60%;
+							margin-top: 6%;
+							padding-top: 8%;
+							margin-left: 21%;
+							background-color: black;
+							border: solid white;
+							color: whitesmoke;
+						}
+						.tamanocmb
+						{
+							width: 100%;
+							height: 44px;
+							border:inset;
+						}
+						.div_tamanof
+						{
+							width: 26%;
+							height: 124px;
+							padding-top: 0%;
+							margin-left: 2px;
+							}.div_tamano
+							{
+								width: 16%;
+								height: 52px;
+								margin-top: 3%;
+								padding-top: 0%;
+								margin-left: 233px;
+							}
+							.div_tamanobtn_cancel
+							{
+								width: 16%;
+								height: 52px;
+								margin-top: -8%;
+								margin-left: 342px;
+								padding-top: 0%;
+							}
+							.bo
+							{
+								border: solid white;    
+							}
+							.vercorreo2
+							{
+								margin-top: 90px;
+								margin-left: 600px;
+								border: solid grey;
+								border-right-color:transparent;
+								display: none;
+								width: 53.8%;
+								height: 82.3%;
+							}
+							.leermensajes
+							{
+								width: 22%;
+							}
+							.divbandejas
+							{
+								margin-left: -11%;
+								padding-left: 0%;
+								width: 17%;
+								margin-top: 6%;
+								padding-bottom: 0.2%;
+							}
+							.bandejas
+							{        
+								width: 16%;
+								margin-top: 12%;
+								margin-left: -10%;
+							}
+							.bandejas.de
+							{
+								text-decoration: none;
+
+							}
+							.borde
+							{
+								width: 40%;
+								margin-top: 6%;
+								padding-top: 8%;
+								margin-left: 24%;
+								background-color: black;
+								border: solid white;
+								color: whitesmoke;
+							}
+							.containertittle
+							{
+								width: 122%;
+								background-color: black;
+								margin-left: -11%;
+							}
+							.fotoonline
+							{
+								margin-top: -65px;
+								width: 8%;
+								float: right;
+								margin-right: -13px;
+								height: 66px;
+							}
+							.nombre
+							{
+
+								margin-left: 88%;
+								margin-top: -4%;
+							}
+							.bajarunpoco
+							{
+								padding-top:1%;
+							}		
+							.bajarunpoco.grande
+							{
+								width: 109%;	
+							}								
+							.color.marcado
+							{
+								color: red;
+								background-color:grey;
+							}
+							.bajarunpoco.grande:hover{
+								background-color:grey;
+							}
+							.colornuevo
+							{
+								color: red;
+							}
+							.botonnuevo:hover
+							{
+								background-color:grey;
+							}
+							.color.marcado.bandejas
+							{
+								color: black;
+								background-color: white;
+								margin-left: -5%;
+								margin-top: 1%;
+								width: 109%;
+							}
+							td
+							{
+								margin-left: 74%;
+							    border-bottom: solid lavender;
+							}
+							.divbtn
+							{
+								float: right;
+								margin-top: -24%;
+								margin-right: 16%;
+							}
+							.divbtn.edit
+							{
+								float: right;
+								margin-top: -24%;
+								margin-right: 3%;
+							}
+							td:hover
+							{
+								background-color:grey;
+							}
