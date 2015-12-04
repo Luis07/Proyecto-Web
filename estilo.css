@@ -124,7 +124,7 @@
 							}
 							.bo
 							{
-								border: solid white;    
+								border: solid black;    
 							}
 							.vercorreo2
 							{
@@ -140,105 +140,185 @@
 							{
 								width: 22%;
 							}
+							.divbandejas:hover{
+								background-color:#123959 ;
+							}
 							.divbandejas
 							{
-								margin-left: -11%;
+								margin-left: -16%;
 								padding-left: 0%;
-								width: 17%;
-								margin-top: 6%;
+								width: 20%;
+								margin-top: 0.1%;
 								padding-bottom: 0.2%;
-							}
-							.bandejas
-							{        
-								width: 16%;
-								margin-top: 12%;
-								margin-left: -10%;
-							}
-							.bandejas.de
-							{
-								text-decoration: none;
+								height: 102px;}
+								.bandejas
+								{        
+									width: 16%;
+									margin-top: 12%;
+									margin-left: -10%;
+								}
+								.bandejas.de
+								{
+									text-decoration: none;
 
-							}
-							.borde
-							{
-								width: 40%;
-								margin-top: 6%;
-								padding-top: 8%;
-								margin-left: 24%;
-								background-color: black;
-								border: solid white;
-								color: whitesmoke;
-							}
-							.containertittle
-							{
-								width: 122%;
-								background-color: black;
-								margin-left: -11%;
-							}
-							.fotoonline
-							{
-								margin-top: -65px;
-								width: 8%;
-								float: right;
-								margin-right: -13px;
-								height: 66px;
-							}
-							.nombre
-							{
+								}
+								.borde
+								{
+									width: 40%;
+									margin-top: 6%;
+									padding-top: 8%;
+									margin-left: 24%;
+									background-color: black;
+									border: solid white;
+									color: whitesmoke;
+								}
+								.navtitulo
+								{
+									width: 136%;
 
-								margin-left: 88%;
-								margin-top: -4%;
-							}
-							.bajarunpoco
-							{
-								padding-top:1%;
-							}		
-							.bajarunpoco.grande
-							{
-								width: 109%;	
-							}								
-							.color.marcado
-							{
-								color: red;
-								background-color:grey;
-							}
-							.bajarunpoco.grande:hover{
-								background-color:grey;
-							}
-							.colornuevo
-							{
-								color: red;
-							}
-							.botonnuevo:hover
-							{
-								background-color:grey;
-							}
-							.color.marcado.bandejas
-							{
-								color: black;
-								background-color: white;
-								margin-left: -5%;
-								margin-top: 1%;
-								width: 109%;
-							}
-							td
-							{
-								margin-left: 74%;
-							    border-bottom: solid lavender;
-							}
-							.divbtn
-							{
-								float: right;
-								margin-top: -24%;
-								margin-right: 16%;
-							}
-							.divbtn.edit
-							{
-								float: right;
-								margin-top: -24%;
-								margin-right: 3%;
-							}
-							td:hover
-							{
-								background-color:grey;
-							}
+								}
+								.posicion.nombresband
+								{
+									margin-left: 4.4%;
+									margin-top: -5.5%;
+									padding-left: 4%;
+									width: 31%;
+									height: 90px;
+									padding-top: 2%;
+								    text-align: center;
+								    border-bottom:solid lightblue;
+								}
+								.derecha{
+									margin-top: 7.9%;
+									margin-right: -38%;
+								}
+								.posicion
+								{
+									margin-left: -17.6%;
+								}.nlban.p 
+								{
+									margin-left: 67%;
+								}
+								.nlban{
+									margin-left: -19%;
+								}
+								.h2{
+									margin-left: -9%;
+								}
+								.h1{
+									margin-left: -9%;
+								}
+								.posicion.navt{
+									margin-left: -16%;    
+									width: 132%;
+									height: 40px;
+								}
+								.colorfondo:hover{
+									background-color: lightblue;
+								}
+								.colorfondo{
+									background-color: white;
+									margin-top: -1.8%;
+									padding-left: 13%;
+								}
+								.fotoonline
+								{
+									margin-top: -65px;
+									width: 8%;
+									float: right;
+									margin-right: -13px;
+									height: 66px;
+								}
+								.nombre
+								{
+									margin-left: 88%;
+									margin-top: -4%;
+									margin-right: 7%;
+									background-color: white;
+								}
+								.bajarunpoco
+								{
+									padding-top: 5%;
+									width: 93%;
+									height: 40px;
+									padding-left: 7%;
+								}		
+								.bajarunpoco.grande
+								{
+									width: 109%;	
+								}								
+								.color.marcado
+								{
+									color: red;
+									background-color:grey;
+								}
+								.bajarunpoco.grande:hover{
+									background-color:grey;
+								}
+								.divbtnn
+								{
+									margin-top: -1.7%;
+								}
+								.colornuevo
+								{
+									color: white;
+								}
+								.botonnuevot
+								{
+									width: 7%;
+									height: 34px;
+									margin-top: -1%;
+									margin-left: 3%;
+								}
+								.botonnuevo:hover
+								{
+									background-color:grey;
+								}
+								.cazul{
+									color: darkblue;
+								}
+								.cgris{
+									color: grey;
+								}
+								.color.marcado.bandejas
+								{
+									color: black;
+									background-color: white;
+									margin-left: -5%;
+									margin-top: 0.1%;
+									width: 110.1%;
+								}
+								td
+								{
+									margin-left: 74%;
+									border-bottom: solid lavender;
+								}
+								.divbtn
+								{
+									display: none;
+									float: right;
+									margin-top: -24%;
+									margin-right: 16%;
+								}
+								.divbtn.edit
+								{
+									float: right;
+									margin-top: -24%;
+									margin-right: 3%;
+								}
+								td:hover
+								{
+									background-color:grey;
+								}
+								.leercorreos
+								{
+									display: none;
+									margin-top: -26%;
+									width: 66%;
+									height: 460px;
+									background-color: white;
+								}
+								.vermensajes{
+									margin-left: 4.6%;
+									width: 30.7%;
+								}
