@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-responsive.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="animate.css">	
+</head >
+<body onload="LOGIN.usuarioconectado();LOGIN.cargarcorreosborrador();LOGIN.mostrarcantidadcorreosenlistas();" style="background-color:#73614C">
+	<section class="container-fluid containerborde ">
+		<div class="row ">
+			<div class="col-xs-12 col-sm-12 col-md-12 navtitulo">
+				<nav class="navbar navbar-inverse navtitulo color">
+					<div>
+						<h2>
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Mailto
+						</h2>
+					</div>
+				</nav>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 posicion navt">
+				<button id="btn_redactar" data-toggle="modal" data-target="#exampleModal" class="btn btn-info botonnuevo botonnuevot glyphicon glyphicon-plus-sign colornuevo" aria-hidden="true"> Nuevo
+				</button>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 divbandejas" >
+				<div>
+				<div class="bajarunpoco">
+					<button class="btn btn-primary bajarunpoco grande  color marcado" type="button" id="bs" onclick="LOGIN.bandejasalida();LOGIN.cargarcorreosborrador();">
+						Bandeja de salida <span class="badge" id="cbs">0</span>
+					</button>
+				</div>
+				<div class="bajarunpoco">
+					<button class="btn btn-primary bajarunpoco grande" type="button" onclick ="LOGIN.bandejaenviados();LOGIN.cargarcorreosenviados();" id="be">
+						Bandeja de enviados <span class="badge" id="cbe">0</span>
+					</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 posicion nombresband colorfondo navtitulo color sombra">
+				<span id="nban" class="h2" >Bandeja salida</span>
+			</div>
+			<div class="col-md-2 nlban p">
+				<span class="nlban" >Selecciona un correo para ver su contenido</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="modal animated bounceInUp derecha sombra" id="exampleModal"  keyboard: "false" data-keyboard="false" data-backdrop="static"tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="exampleModalLabel">Nuevo Mensaje</h4>
+						</div>
+						<div class="modal-body">
+							<form name="formredactar">
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Para:</label>
+									<input type="text" class="form-control" id="mensajepara"  pattern="[^ @]*@[^ @]*">
+								</div>
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Asunto:</label>
+									<input type="text" class="form-control" id="asuntomensaje">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">Mensaje:</label>
+									<textarea  type"textarea" class="form-control " name="contenidomensaje"></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" data-dismiss="modal" onclick="LOGIN.guardarbandejasalida();LOGIN.cargarcorreosborrador();LOGIN.mostrarcantidadcorreosenlistas();">Guardar</button>
+							<button type="button" class="btn btn-primary"  onclick="LOGIN.guardarbandejaenviados();LOGIN.mostrarcantidadcorreosenlistas();window.location.reload();">Enviar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="modal animated fadeInLeft derecha" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="exampleModalLabel">Nuevo Mensaje</h4>
+						</div>
+						<div class="modal-body">
+							<form name="formreditar">
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Para:</label>
+									<input type="text" class="form-control" id="emensajepara"  pattern="[^ @]*@[^ @]*">
+								</div>
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Asunto:</label>
+									<input type="text" class="form-control" id="easuntomensaje">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">Mensaje:</label>
+									<textarea  type"textarea" class="form-control " name="econtenidomensaje"></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" data-dismiss="modal" onclick="LOGIN.guardareditado();">Guardar</button>
+							<button type="button" class="btn btn-primary"  onclick="LOGIN.enviareditado();">Enviar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="modal animated bounceInDown derecha" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" onclick="LOGIN.cerrar();" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="exampleModalLabel">Mensaje</h4>
+						</div>
+						<div class="modal-body">
+							<form name="formreditar">
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Para:</label>
+									<input type="text" readonly="readonly"  class="form-control" id="vmensajepara"  pattern="[^ @]*@[^ @]*">
+								</div>
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Asunto:</label>
+									<input type="text" readonly="readonly" class="form-control" id="vasuntomensaje">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">Mensaje:</label>
+									<textarea  type"textarea" readonly="readonly" class="form-control " name="vcontenidomensaje" id="vercm"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-4 vermensajes ">
+					<table class="color marcado bandejas sombra">
+						<thead>
+							<tr >
+
+							</tr>
+						</thead>
+						<tbody id="users_table">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript"  src="index.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+</body>
+</html>
