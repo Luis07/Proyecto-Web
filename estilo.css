@@ -12,8 +12,11 @@
 						<div>
 						<input type="file" class="form-control" placeholder="First-name" aria-describedby="sizing-addon1" id="imagen" onchange="LOGIN.imagen()">
 						</div>***/
-						
 
+						@media (max-width: 767px)
+						.navtitulo {
+							background-color:blue;
+						}
 						.h1registro
 						{
 							width: 20%;
@@ -24,7 +27,6 @@
 						.login
 						{
 							
-							background-image: url(http://www.fondos12.com/data/media/2/big/circulos__wallpaper_480x300.jpg);
 							margin-top: 13%;
 							padding-left: 0%;
 							height: 260px;
@@ -42,12 +44,7 @@
 
 						body
 						{
-							background-image: url(http://p1.pichost.me/i/28/1511457.jpg);
-							background-repeat: no-repeat;
-							background-size: cover;
-							-moz-background-size: cover;
-							-webkit-background-size: cover;
-							-o-background-size: cover;
+
 						}
 
 						.form_login
@@ -140,17 +137,17 @@
 							{
 								width: 22%;
 							}
-							.divbandejas:hover{
-								background-color:#123959 ;
-							}
 							.divbandejas
 							{
-								margin-left: -16%;
+								margin-left:0;
 								padding-left: 0%;
 								width: 20%;
 								margin-top: 0.1%;
 								padding-bottom: 0.2%;
-								height: 102px;}
+								height: 119px;
+								}.colorbandenv{
+									background-color: #402D1C;
+								}
 								.bandejas
 								{        
 									width: 16%;
@@ -174,30 +171,41 @@
 								}
 								.navtitulo
 								{
-									width: 136%;
+									padding: 0;
+									margin-left:;
+									width: 100%;
 
+								}
+								.navtitulo.color{
+									background-color: #26201B;
+									color: white;
 								}
 								.posicion.nombresband
 								{
-									margin-left: 4.4%;
-									margin-top: -5.5%;
-									padding-left: 4%;
-									width: 31%;
+									margin-left: 20%;
+									margin-top: -10.5%;	
+									width: 79.9%;
 									height: 90px;
 									padding-top: 2%;
-								    text-align: center;
-								    border-bottom:solid lightblue;
+									text-align: left;
 								}
 								.derecha{
-									margin-top: 7.9%;
-									margin-right: -38%;
+									margin-top: 9.2%;
+									margin-right: -59.3%;
 								}
 								.posicion
 								{
 									margin-left: -17.6%;
-								}.nlban.p 
+								}
+								.nlban.p 
 								{
 									margin-left: 67%;
+									margin-top: 6%;
+									width: 23%;
+									height: 90px;
+									padding-left: 7%;
+									font-size: 200%;
+									color: white;
 								}
 								.nlban{
 									margin-left: -19%;
@@ -209,16 +217,14 @@
 									margin-left: -9%;
 								}
 								.posicion.navt{
-									margin-left: -16%;    
-									width: 132%;
+									margin-top: -1.3%;    
+									width: 100%;
 									height: 40px;
-								}
-								.colorfondo:hover{
-									background-color: lightblue;
+									margin-left: 0;
+									padding-top: 1%;
 								}
 								.colorfondo{
-									background-color: white;
-									margin-top: -1.8%;
+
 									padding-left: 13%;
 								}
 								.fotoonline
@@ -236,6 +242,7 @@
 									margin-right: 7%;
 									background-color: white;
 								}
+								
 								.bajarunpoco
 								{
 									padding-top: 5%;
@@ -250,10 +257,10 @@
 								.color.marcado
 								{
 									color: red;
-									background-color:grey;
+									background-color:#A68B6A;
 								}
 								.bajarunpoco.grande:hover{
-									background-color:grey;
+									background-color: #A68B6A;
 								}
 								.divbtnn
 								{
@@ -265,25 +272,27 @@
 								}
 								.botonnuevot
 								{
-									width: 7%;
-									height: 34px;
+									width: 9%;
+									height: 39px;
 									margin-top: -1%;
-									margin-left: 3%;
+									margin-left: 5%;
+									background-color: #BFB8B0;
+								}
+								.containerborde
+								{
+									border-right:solid #73614C;
 								}
 								.botonnuevo:hover
 								{
 									background-color:grey;
 								}
-								.cazul{
-									color: darkblue;
-								}
-								.cgris{
-									color: grey;
+								.color{
+									color:#73614C;
 								}
 								.color.marcado.bandejas
 								{
 									color: black;
-									background-color: white;
+									background-color:#26201B;
 									margin-left: -5%;
 									margin-top: 0.1%;
 									width: 110.1%;
@@ -297,13 +306,13 @@
 								{
 									display: none;
 									float: right;
-									margin-top: -24%;
-									margin-right: 16%;
+									margin-top: -12%;
+									margin-right: 11%;
 								}
 								.divbtn.edit
 								{
 									float: right;
-									margin-top: -24%;
+									margin-top: -12%;
 									margin-right: 3%;
 								}
 								td:hover
@@ -318,7 +327,104 @@
 									height: 460px;
 									background-color: white;
 								}
-								.vermensajes{
-									margin-left: 4.6%;
-									width: 30.7%;
+
+								.vermensajes
+								{
+									/***width: 29%;***/
+									width: 50%;
+									margin-left: 11.3%;
+									margin-top: -21.7%;
 								}
+								/***box-shadow: 10px 0px 50px #999;***/
+								.sombra{
+									box-shadow: 6px 6px 6px #999;
+								}
+								.divmensa
+								{
+									margin-left: 1%;
+									width: 98%;
+								}
+								@media only screen and (max-width: 627px) {
+									.botonnuevot
+									{
+										width: 30%;
+										height: 39px;
+										margin-top: -1%;
+										margin-left: 1%;
+										background-color: #BFB8B0;
+										}.bajarunpoco.grande
+										{
+											width: 354%;	
+											font-size: 1em;
+											}						.nlban.p 
+											{
+												display: none;				
+											}
+											.posicion.nombresband
+											{
+											display: none;
+											}
+								.vermensajes
+								{
+									/***width: 29%;***/
+									width: 105%;
+									margin-left: -2%;
+									margin-top: -8.7%;
+								}
+								.divbtnn
+								{
+							margin-top: -20%;
+									margin-right: 8%;
+								}
+								.divbtn.edit
+								{
+									float: right;
+									margin-top: -22%;
+									margin-right: 3%;
+								}
+								.derecha{
+												margin-top: 19.2%;
+												margin-right: -10%;
+												width: 100%;
+											}
+											.sombra{
+												box-shadow: 0px 0px 0px #999;
+												}
+										}
+										/*** para tablet,pero nose como aplicar el tamaño
+										@media only screen and (max-width: 768px) {
+											.botonnuevot
+											{
+												width: 10%;
+												height: 39px;
+												margin-top: -1%;
+												margin-left: 1%;
+												background-color: #BFB8B0;
+											}
+											.bajarunpoco.grande
+											{
+												width: 114%;	
+												font-size: 0.8em;
+											}
+											.derecha{
+												margin-top: 19.2%;
+												margin-right: -18%;
+											}
+											.sombra{
+												box-shadow: 0px 0px 0px #999;
+												}
+												.vermensajes
+												{
+													width: 50%;
+													margin-left: 25%;
+													margin-top: -50%;
+												}
+												.divbtn
+												{
+													display: none;
+													float: right;
+													margin-top: -12%;
+													margin-right: 13%;
+												}
+
+											}***/
